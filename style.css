@@ -7,6 +7,7 @@
 a{
   position: relative;
 	color: #d04e8d;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -16,11 +17,12 @@ a:after {
 	left: 0; 
 	width: 0;
 	height: 2px; 
-	background-color: #443947; 
-	transition: width 0.3s ease-out; 
+	background-color: #443947;
+  content: "";
+	transition: width 0.9s ease-out;
 }
 
-a:focus:after {
+a:hover:after, a:focus:after {
 	width: 100%;
 }
 
